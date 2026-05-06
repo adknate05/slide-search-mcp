@@ -161,6 +161,8 @@ if __name__ == "__main__":
     # Railway sets PORT; run SSE transport for remote access, stdio for local
     port = int(os.environ.get("PORT", 0))
     if port:
-        mcp.run(transport="sse", host="0.0.0.0", port=port)
+        mcp.settings.host = "0.0.0.0"
+        mcp.settings.port = port
+        mcp.run(transport="sse")
     else:
         mcp.run()
