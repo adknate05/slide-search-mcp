@@ -1,0 +1,17 @@
+# OAuth credentials — never commit these
+credentials.json
+token.json
+
+# Raw PDF slides (190MB — already backed up on Google Drive)
+slides/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS
+.DS_Store
